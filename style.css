@@ -1,0 +1,117 @@
+
+    body {
+      background-color: #fff;
+      margin: 0;
+      height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .nav {
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      font-size: 12px;
+    }
+
+    .nav a {
+      margin-left: 16px;
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .logo-wrapper {
+    position: relative;  
+    display: inline-block;
+    /*margin-bottom: 100px;*/
+    }
+
+    .logo {
+    font-size: 100px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    }
+
+    .image-label {
+    position: absolute;
+    right: 35px;         /* 貼在 Google 右側 */
+    bottom: -2px;          /* 貼在 Google 下方 */
+    font-size: 16px;
+    color: #4285F4;       /* Google 藍 */
+    font-weight: 600;
+    }
+
+    .logo span:nth-child(1) { color: #4285F4; }
+    .logo span:nth-child(2) { color: #DB4437; }
+    .logo span:nth-child(3) { color: #F4B400; }
+    .logo span:nth-child(4) { color: #4285F4; }
+    .logo span:nth-child(5) { color: #0F9D58; }
+    .logo span:nth-child(6) { color: #DB4437; }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .search-box {
+      width: 600px;
+      max-width: 90%;
+      display: flex;
+      gap: 10px;   
+      align-items: center;
+      border: 1px solid #dfe1e5;
+      border-radius: 30px;
+      padding: 10px 12px;
+    }
+
+    .search-icon {
+    font-size: 15px;
+    color: #9aa0a6;          
+    }
+
+    .search-box input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .search-box:hover,
+    .search-box:focus-within {
+      box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+    }
+
+    .buttons {
+      margin-top: 24px;
+    }
+
+    .buttons button {
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      padding: 8px 16px;
+      margin: 0 6px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .buttons button:hover {
+      border: 1px solid #dadce0;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 16px;
+      font-size: 13px;
+      color: #70757a;
+    }
