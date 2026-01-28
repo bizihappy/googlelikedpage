@@ -3,103 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Google 搜尋</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-color: #fff;
-    }
+  <link rel="stylesheet" href="style.css">
 
-    .nav {
-      position: absolute;
-      top: 16px;
-      right: 24px;
-      font-size: 14px;
-    }
-
-    .nav a {
-      margin-left: 16px;
-      text-decoration: none;
-      color: #1a0dab;
-    }
-
-    .nav a:hover {
-      text-decoration: underline;
-    }
-
-    .logo {
-      font-size: 80px;
-      font-weight: bold;
-      letter-spacing: -3px;
-      margin-bottom: 24px;
-    }
-
-    .logo span:nth-child(1) { color: #4285F4; }
-    .logo span:nth-child(2) { color: #DB4437; }
-    .logo span:nth-child(3) { color: #F4B400; }
-    .logo span:nth-child(4) { color: #4285F4; }
-    .logo span:nth-child(5) { color: #0F9D58; }
-    .logo span:nth-child(6) { color: #DB4437; }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-
-    .search-box {
-      width: 500px;
-      max-width: 90%;
-      display: flex;
-      align-items: center;
-      border: 1px solid #dfe1e5;
-      border-radius: 24px;
-      padding: 10px 15px;
-    }
-
-    .search-box input {
-      flex: 1;
-      border: none;
-      outline: none;
-      font-size: 16px;
-    }
-
-    .search-box:hover,
-    .search-box:focus-within {
-      box-shadow: 0 1px 6px rgba(32,33,36,0.28);
-    }
-
-    .buttons {
-      margin-top: 24px;
-    }
-
-    .buttons button {
-      background-color: #f8f9fa;
-      border: 1px solid #f8f9fa;
-      padding: 8px 16px;
-      margin: 0 6px;
-      font-size: 14px;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-
-    .buttons button:hover {
-      border: 1px solid #dadce0;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 16px;
-      font-size: 13px;
-      color: #70757a;
-    }
-  </style>
 </head>
 
 <body>
@@ -115,8 +20,12 @@
 
   <form action="https://www.google.com/search" method="get">
     <div class="search-box">
-      <input type="text" name="q" placeholder="搜尋 Google 或輸入網址" autofocus>
-    </div>
+      <span class="search-icon">
+      🔍
+      </span>
+    <input type="text" name="q" placeholder="">
+</div>
+
 
     <div class="buttons">
       <button type="submit">Google 搜尋</button>
