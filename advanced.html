@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>Google 進階搜尋</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #202124;
+    }
+
+    .top-nav {
+      display: flex;
+      justify-content: flex-end;
+      padding: 16px 24px;
+      font-size: 14px;
+    }
+
+    .top-nav a {
+      text-decoration: none;
+      color: #1a0dab;
+    }
+
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .page-title {
+      padding: 20px 24px;
+      font-size: 20px;
+      border-bottom: 1px solid #ebebeb;
+    }
+
+    .form-container {
+      padding: 24px;
+      max-width: 700px;
+    }
+
+    .form-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+      font-size: 13px;
+    }
+
+    .form-row label {
+      width: 240px;
+    }
+
+    .form-row input {
+      flex: 1;
+      height: 30px;
+      padding: 4px 8px;
+      font-size: 13px;
+      border: 1px solid #d9d9d9;
+      border-radius: 2px;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px;
+    }
+
+    .advanced-btn {
+      background-color: #1a73e8;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      font-size: 13px;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    .advanced-btn:hover {
+      background-color: #1669c1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-nav">
+    <a href="index.html">Google 搜尋</a>
+  </div>
+
+  <div class="page-title">進階搜尋</div>
+
+  <div class="form-container">
+    <form action="https://www.google.com/search" method="get">
+
+      <div class="form-row">
+        <label>尋找包含以下所有字詞的頁面：</label>
+        <input type="text" name="as_q">
+      </div>
+
+      <div class="form-row">
+        <label>尋找包含以下字詞或短語的頁面：</label>
+        <input type="text" name="as_epq">
+      </div>
+
+      <div class="form-row">
+        <label>尋找包含以下任意字詞的頁面：</label>
+        <input type="text" name="as_oq">
+      </div>
+
+      <div class="form-row">
+        <label>尋找不包含以下任何字詞的頁面：</label>
+        <input type="text" name="as_eq">
+      </div>
+
+      <div class="button-row">
+        <button type="submit" class="advanced-btn">進階搜尋</button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
